@@ -1,0 +1,18 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: #ff4b5c;
+  color: aliceblue;
+  padding: 12px;
+  cursor: pointer;
+  border: transparent;
+  font-family: "Lobster", cursive;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
