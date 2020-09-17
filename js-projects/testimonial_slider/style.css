@@ -1,0 +1,75 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: "Patrick Hand SC", cursive;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+  color: aliceblue;
+}
+
+h2 {
+  font-size: 50px;
+  margin-top: 0px;
+  color: aliceblue;
+  position: absolute;
+  top: 25px;
+}
+
+.slider {
+  width: 600px;
+  height: 300px;
+  border: 5px solid #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 27px;
+  padding: 0 15px;
+  margin-top: 80px;
+}
+
+.slider .image {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-image: url(/images/batman.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -25%;
+  border: 4px solid #fff;
+}
+
+.main {
+  text-align: center;
+}
+
+.author {
+  margin-top: -65px;
+  align-self: center;
+}
+
+a.previous {
+  position: absolute;
+  left: 25%;
+  top: 55%;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+a.next {
+  position: absolute;
+  right: 25%;
+  top: 55%;
+  font-size: 30px;
+  cursor: pointer;
+}
