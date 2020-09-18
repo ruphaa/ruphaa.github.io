@@ -5,6 +5,7 @@
   const modal = document.querySelector(".selected");
   const close = document.querySelector(".close");
   const modalContainer = document.querySelector(".modal-container");
+  const body = document.querySelector("body");
 
   // Filter Items based on the menu click
   btns.forEach((button) => {
@@ -42,10 +43,12 @@
       const src = e.target.src;
       modal.style.backgroundImage = `url(${src})`;
       modalContainer.classList.remove("hide");
+      body.style.overflow = "hidden";
     });
   });
 
   close.addEventListener("click", (e) => {
     modalContainer.classList.add("hide");
+    body.style.overflow = "scroll";
   });
 })();

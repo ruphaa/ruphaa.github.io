@@ -14,3 +14,5 @@ Below is the list of completed projects along with the live website.
 6. [Funny Quote Generator](https://ruphaa.github.io/js-projects/random_quote_generator/)
 
 7. [Testimonial Slider](https://ruphaa.github.io/js-projects/testimonial_slider/)
+
+8. [Food Factory](https://ruphaa.github.io/js-projects/food_factory/)
