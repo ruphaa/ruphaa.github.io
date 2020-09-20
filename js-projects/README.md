@@ -16,3 +16,5 @@ Below is the list of completed projects along with the live website.
 7. [Testimonial Slider](https://ruphaa.github.io/js-projects/testimonial_slider/)
 
 8. [Food Factory](https://ruphaa.github.io/js-projects/food_factory/)
+
+9. [Scientific Calculator](https://ruphaa.github.io/js-projects/scientific_calculator/)
