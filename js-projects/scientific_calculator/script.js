@@ -58,6 +58,7 @@
       input.value = Math.sqrt(input.value);
     },
     square: function (input) {
+      debugger;
       input.value = Math.pow(eval(input.value), 2);
     },
     exp: function (input) {
@@ -76,13 +77,13 @@
     btn.addEventListener("click", (e) => {
       const selected = e.target.dataset.value;
       let numericRegex = /[0-9]/g;
-      if (numericRegex.test(selected)) {
-        methods.addVal(display, selected);
-      } else if (operatorMapping.hasOwnProperty(selected)) {
+      if (operatorMapping.hasOwnProperty(selected)) {
         if (selected == "π") {
           selected = "3.14159265359";
         }
         methods[operatorMapping[selected]](display, selected);
+      } else if (numericRegex.test(selected)) {
+        methods.addVal(display, selected);
       }
     });
   });
