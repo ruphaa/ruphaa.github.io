@@ -33,7 +33,7 @@
         input.value += character;
       }
     },
-    compute: function (input, character) {
+    compute: function (input) {
       input.value = eval(input.value);
     },
     clearAll: function (input) {
