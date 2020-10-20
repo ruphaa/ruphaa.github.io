@@ -9,6 +9,26 @@ body {
   color: #fff;
 }
 
+.hide {
+  display: none !important;
+}
+
+.title {
+  display: flex;
+}
+
+#player {
+  font-size: 35px;
+}
+
+#refresh {
+  cursor: pointer;
+  font-size: 35px;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+
 .grid {
   width: 610px;
   height: 610px;
@@ -17,6 +37,16 @@ body {
   justify-content: space-between;
   background-color: #fff;
   margin-bottom: 10px;
+  position: relative;
+}
+
+.overlay {
+  width: 100% !important;
+  height: 100% !important;
+  opacity: 0.4;
+  background: #fff;
+  position: absolute;
+  cursor: not-allowed !important;
 }
 
 .grid div {
