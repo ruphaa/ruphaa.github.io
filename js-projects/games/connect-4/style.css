@@ -3,7 +3,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
 }
 
@@ -20,9 +20,26 @@ body {
   justify-content: space-between;
   background-color: #175dde;
   padding: 15px;
+  position: relative;
+}
+
+.overlay {
+  width: 100% !important;
+  height: 100% !important;
+  opacity: 0.8;
+  background: #fff;
+  position: absolute !important;
+  cursor: not-allowed !important;
+  z-index: 5;
+  border-radius: 0 !important;
+  /* width: 815px !important; */
+  margin-top: 0 !important;
+  top: 0;
+  left: 0;
 }
 
 .grid div {
+  position: relative;
   width: 100px;
   height: 100px;
   background-color: #1348a2;
@@ -40,3 +57,9 @@ body {
 .grid div.beta {
   background-color: #fff000;
 }
+/* 
+.grid div::after {
+  position: absolute;
+  content: attr(data-index);
+  font-size: 30px;
+} */
