@@ -3,6 +3,7 @@
   const result = document.querySelector("#winner");
   const squares = document.querySelectorAll(".grid div");
   const overlay = document.querySelector(".overlay");
+  const refresh = document.querySelector("#refresh");
   const winningCondition = [
     [0, 1, 2, 3],
     [41, 40, 39, 38],
@@ -30,6 +31,7 @@
     [6, 13, 20, 27],
     [35, 28, 21, 14],
     [23, 29, 35, 41],
+    [35, 34, 33, 32],
     [20, 27, 34, 41],
     [0, 7, 14, 21],
     [13, 20, 27, 34],
@@ -149,7 +151,20 @@
       }
     }
   };
+  const reset = (e) => {
+    overlay.classList.add("hide");
+    squares.forEach((square) => {
+      if (!square.classList.contains("overlay")) {
+        square.classList.value = "";
+      }
+    });
+    result.textContent = "";
+    result.classList.add("hide");
+    overlay.classList.add("hide");
+    $currentPlayer.textContent = "Alpha";
+  };
   squares.forEach((square) => {
     square.addEventListener("click", handleClick);
   });
+  refresh.addEventListener("click", reset);
 })();

@@ -11,6 +11,14 @@ body {
   display: none !important;
 }
 
+#refresh {
+  cursor: pointer;
+  font-size: 35px;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+
 .grid {
   display: flex;
   flex-direction: column;
